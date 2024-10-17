@@ -6,17 +6,16 @@ function function_section_banner(){
 	$a = mysqli_fetch_array($q);
 	echo '
 	<section>
-	<div class="d-flex flex-row">
-		<div class="col-lg-12 col-sm-12">
-			<img src="img/'.$a["info_banner"].'">
-		</div>
-		<div class="col-lg-6 col-sm-6">
-			<h3>'.$a["info_title"].'</h3>
-			<p>'.$a["info_description"].'</p>
-		</div>
-	</div>
-	</section>';
-
+        <div class="d-flex flex-column col-lg-12 col-sm-12">
+            <div class="text-container">
+                <h3>'.$a["info_title"].'</h3>
+                <p>'.$a["info_description"].'</p>
+            </div>
+            <div class="image-container">
+                <img src="img/'.$a["info_banner"].'" style="width:100%; height:auto;">
+            </div>
+        </div>
+    </section>';
 
 }
 

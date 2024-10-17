@@ -1,6 +1,6 @@
 <?php 
 
-function function_info_general($info_telephone,$info_email,$info_title,$info_description,$info_banner){
+function function_info_general($info_telephone,$info_email,$info_title,$info_description){
 	include 'connections/config.php';
 
 	$banner = $_FILES["info_banner"]["name"];
@@ -12,7 +12,7 @@ function function_info_general($info_telephone,$info_email,$info_title,$info_des
 	$verifica = $_FILES['info_banner']['size'];
 
 	$q = mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM info_general WHERE info_id = 1"));
-	
+
 	if($verifica == 0){
 		mysqli_query($conn, "UPDATE info_general SET info_telephone = '$info_telephone', info_email = '$info_email', info_title = '$info_title', info_description = '$info_description' WHERE info_id = 1");
 	}else{

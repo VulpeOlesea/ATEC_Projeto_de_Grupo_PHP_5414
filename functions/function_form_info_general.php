@@ -10,8 +10,8 @@ function function_form_info_general(){
 			<label>Email: </label>
 			<input type="email" name="info_email" class="form-control" value="'.$q["info_email"].'">
 			<label>Titulo: </label>
-			<hr>
 			<input type="text" name="info_title" class="form-control" value="'.$q["info_title"].'">	
+			<hr>
 			<label>Descrição: </label>
 			<textarea name="info_description" class="form-control"> '.$q["info_description"].'</textarea>
 		</div>
@@ -22,7 +22,6 @@ function function_form_info_general(){
 
 			<button type="submit" name="bt_info" class="form-control mt-2">Inserir</button>
 		</div>
-
 
 	';
 }

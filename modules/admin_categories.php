@@ -16,7 +16,7 @@
 	<div class="col-lg-6 col-sm-6">
 
 		<?php 
-		$edit = $_REQUEST["edit"];
+		$edit = isset($_REQUEST["edit"]) ? $_REQUEST["edit"] : null;
 		if(!$edit){
 			echo '<h3>Criar Nova Categoria</h3>
 					<form method="post">

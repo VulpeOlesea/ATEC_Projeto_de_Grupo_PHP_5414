@@ -1,7 +1,7 @@
 <footer class="d-flex flex-row">
 	
 	<div class="flex-column col-lg-4">
-		OnlineEditora
+		Online<i class="bi bi-feather"></i>EDITORA
 	</div>
 	<div class="flex-column col-lg-4">
 		Contactos<br>

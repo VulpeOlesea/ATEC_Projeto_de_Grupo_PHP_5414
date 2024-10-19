@@ -6,6 +6,7 @@
 
 	<div class="flex-column col-lg-10 flex-end top-icons">
 		<?php 
+		if (isset($_SESSION["log_role"])) {
 			if($_SESSION["log_role"] == 0){
 				//Menu do utilizador
 				echo '<nav class="user_nav">';
@@ -27,6 +28,7 @@
 					echo '</ul>';
 				echo '</nav>';
 			}
+		}
 		?>
 </nav>
 

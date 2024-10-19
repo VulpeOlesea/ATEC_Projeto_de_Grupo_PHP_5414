@@ -1,7 +1,7 @@
 
 <nav class="d-flex flex-row">
 	<div class="flex-column col-lg-2 text-start logo">
-			Online<i class="bi bi-feather"></i>EDITORA
+		<a href="index.php">Online<i class="bi bi-feather"></i>EDITORA</a>
 	</div>
 
 	<div class="flex-column col-lg-10 flex-end top-icons">

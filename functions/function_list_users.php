@@ -2,7 +2,7 @@
 
 function function_list_users(){
 	include 'connections/config.php';
-	$q = mysqli_query($conn,"SELECT login.log_id, login.log_email, login.log_role, login.log_status, users.usr_name, users.usr_surname, users.usr_district, users.usr_concelho FROM login JOIN users ON login.log_id = users.usr_log_id");
+	$q = mysqli_query($conn,"SELECT login.log_id, login.log_email, login.log_role, login.log_status, users.usr_name, users.usr_surname, users.usr_district, users.usr_concelho, users.usr_last_access FROM login JOIN users ON login.log_id = users.usr_log_id");
 	while($a = mysqli_fetch_array($q)){
 		echo '
 		<tr>
@@ -11,6 +11,7 @@ function function_list_users(){
 			<td>'.$a["log_email"].'</td>
 			<td>'.$a["usr_district"].'</td>
 			<td>'.$a["usr_concelho"].'</td>
+			<td>'.$a["usr_last_access"].'</td>
 			<td>';
 				if($a["log_role"] == 1){
 					echo 'Admin <a href="#" class="makeusr" id="'.$a["log_id"].'"><i class="bi bi-person-fill-dash"></i></a>';
@@ -26,8 +27,7 @@ function function_list_users(){
 			}	
 			echo'</td>
 			<td>
-			<button href="#edicao_conta_utilizador" id="'.$a["log_id"].'" type="button" class="btn btn-primary editar" data-bs-toggle="modal" data-bs-target="#edicao_conta_utilizador">Editar</button>
-
+				<a href="?nav=admin&opt=users&edit='.$a["log_id"].'" class="btn btn-primary editar">Editar</a>
 			</td>
 		</tr>
 		';

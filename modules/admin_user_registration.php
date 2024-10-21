@@ -1,4 +1,4 @@
-<div class="d-flex flex-row">
+<div class="d-flex flex-row row-m">
 	<div class="col-lg-6 col-sm-6">
         <h3>Criar Novo Utilizador</h3>
 

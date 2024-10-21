@@ -1,5 +1,5 @@
 <form method="post" enctype="multipart/form-data">
-<section class="d-flex flex-row">
+<section class="d-flex flex-row row-m">
 		<?php 
 		function_form_info_general();
 		

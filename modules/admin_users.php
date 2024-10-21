@@ -1,4 +1,4 @@
-<div class="d-flex flex-row">
+<div class="d-flex flex-row row-m">
 	<div class="col-lg-12 col-sm-12">
 		<table class="table">
   			<thead class="table-dark">
@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<div class="d-flex flex-row">
+<div class="d-flex flex-row row-m">
 	<div class="col-lg-6 col-sm-6">
         <?php 
         if(isset($_REQUEST["edit"])){

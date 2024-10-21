@@ -1,4 +1,4 @@
-<footer class="d-flex flex-row">
+<footer class="d-flex flex-row justify-content-between">
 	
 	<div class="flex-column col-lg-4">
 		Online<i class="bi bi-feather"></i>EDITORA
@@ -7,7 +7,7 @@
 		Contactos<br>
 		<?php function_footer_contacts(); ?>
 	</div>
-	<div class="flex-column col-lg-4 flex-end top-icons">
+	<div class="flex-column col-lg-4 d-flex justify-content-end top-icons">
 		<ul>
 			<li><a href="#">
 				<i class="bi bi-facebook"></i>

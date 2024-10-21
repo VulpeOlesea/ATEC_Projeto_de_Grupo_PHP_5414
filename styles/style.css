@@ -1,0 +1,185 @@
+/*
+=====================================================================
+*   Projeto: Trabalho de Grupo
+*   UFCD: 5414 - Programação para a WEB - cliente (client-side)
+*   Turma: TPSI PL 1223
+*   Formador: Hugo Farinha
+*   Formandos: Leila Arruda, Lucas Patrício, Olesea Vulpe, Rúben Fonseca
+=====================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Geral
+================================================== */
+a{ text-decoration:none;}
+.row-m { margin: 3% 5%; }
+header, nav, footer{ padding:1% 5%; }
+header, nav, footer{ background-color: #1a1918; }
+a, footer, header{ color: #C5A992; }
+body{ background-color: #F3F2EC; }
+
+/* Tabelas */
+.table-dark {
+  --bs-table-border-color: none;
+  --bs-table-bg: #C5A992;
+}
+
+/* Botões */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #C5A992;
+  --bs-btn-border-color: #C5A992;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #C5A992;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #f1caaa;
+  --bs-btn-active-border-color: none;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #f1caaa;
+  --bs-btn-disabled-border-color: none;
+}
+
+/* Header & Nav */
+.logo{ font-size: 1.5rem; }
+.usr_nav li, .admin_nav li{ display:inline; margin: 1%;}
+
+.top-icons li{ display: inline; margin-right: 5%; }
+.top-icons{ text-align:right; color: #555; }
+
+/* Homepage
+================================================== */
+/* Banner */
+
+
+/* Produtos */
+
+
+
+/* Footer
+================================================== */
+
+
+
+.h2{
+  font-family: "Playfair Display" !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #C5A992;
+}
+
+
+
+
+
+
+
+.text-container {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* Shop page */
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-style {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slick-slider .product-style {
+    margin: 0 15px 25px;
+  }
+  
+  .product-style figcaption p {
+    margin-bottom: 20px;
+  }
+  
+  .product-style img.product-item {
+    position: relative;
+    background: #EFEEE8;
+    border: 1px solid #EAE8DF;
+    padding: 15%;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .product-style button.add-to-cart {
+    position: absolute;
+    background: #C5A992;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3;
+    bottom: 300px;
+    bottom: -65px;
+    left: 0;
+    z-index: 9;
+    transition: 0.3s ease-out;
+    border: none;
+  }
+  
+  .product-style:hover button.add-to-cart {
+    bottom: 380px;
+    bottom: 0;
+  }
+  
+  .product-item figcaption {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .product-item figcaption>h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #74642F;
+    margin: 0;
+  }
+  .product-item figcaption>p {
+    margin: 0;
+  }
+  
+  .product-item .item-price {
+    color: #74642F;
+    font-size: 1.3em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .products-grid .product-item {
+      width: 45%;
+    }
+  
+    .product-style img.product-item {
+      /*height: 550px;*/
+      object-fit: contain;
+      margin: 0 auto;
+    }
+  
+    .products-grid.col-3 .product-style,
+    .products-grid.col-4 .product-style,
+    .products-grid.col-5 .product-style {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .products-grid .product-style {
+      width: 100%;
+    }
+  }

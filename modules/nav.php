@@ -6,6 +6,10 @@
 
 	<div class="flex-column col-lg-10 flex-end top-icons">
 		<?php 
+		//Initialize booksInCart array.
+		$booksInCart = 'booksInCart'; 
+		$_SESSION[$booksInCart] = [];
+
 		if (isset($_SESSION["log_role"])) {
 			if($_SESSION["log_role"] == 0){
 				//Menu do utilizador

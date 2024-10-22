@@ -87,12 +87,10 @@
 			//alert(cat_id);
 			$.ajax({
 				type: "POST",
-				url: "functions/function_status_account.php",
+				url: "functions/function_filter_categories.php",
 				dataType: "text",
 				data:{"cat_id": cat_id},
 				success: function(response){
-					//alert(response);
-					//location.reload();
 					$("#adm_lista_produtos").html(response);
 				}
 			});

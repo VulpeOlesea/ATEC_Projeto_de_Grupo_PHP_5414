@@ -7,10 +7,12 @@
 				<?php function_select_categories(0); ?>
 			</select><br>
 
-		<table class="table">
+		<table class="table" style="width: 90%;">
 			<thead class="table-dark">
+				<th>Imagem</th>
 				<th>Nome</th>
 				<th>Preço</th>
+				<th>Alterações</th>
 			</thead>
 			<tbody id="adm_lista_produtos">
 			</tbody>
@@ -91,7 +93,6 @@
 			</form>
 		';
 	}
-
 	
 			if(isset($_POST['bt_novo_produto'])){
 				function_new_product($_POST['prod_name'], $_POST['prod_author'], $_POST['prod_price'], $_POST['prod_description'], $_POST['prod_category'], $_POST['prod_image']);

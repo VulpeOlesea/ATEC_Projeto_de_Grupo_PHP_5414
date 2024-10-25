@@ -1,5 +1,15 @@
 <div class="d-flex flex-row row-m">
-	<div class="col-lg-12 col-sm-12">
+	<div class="col-lg-4 col-sm-4">
+        <button class="btn btn-primary mb-3" type="submit" name="bt_new_user"><a href="?nav=admin&opt=user_reg" style="color:white">Criar Novo Utilizador</a></button>
+    </div>
+    <div class="col-lg-8 col-sm-8">
+        <input class="form-control" id="search" type="text" placeholder="Search..">
+    </div>
+</div>
+
+<div class="d-flex flex-row row-m">
+    <div class="col-lg-12 col-sm-12">
+    
 		<table class="table">
   			<thead class="table-dark">
     			<th>Nome</th>
@@ -12,8 +22,12 @@
 				<th>Desativar</th>
 				<th>Alterações</th>			
   			</thead>
-			<tbody>
-				<?php function_list_users(); ?>
+			<tbody id="table_search">
+				<?php 
+                if (isset($_SESSION['log_id'])) {
+                    function_list_users();
+                }
+                ?>
 			</tbody>
 		</table>
 	</div>

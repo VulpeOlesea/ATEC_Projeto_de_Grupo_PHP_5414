@@ -10,10 +10,16 @@ function function_section_products(){
         while($a = mysqli_fetch_array($q)){
             echo '
             <div class="col-md-3">
-                <div class="product-item">
+                <div class="product-item text-center">
                     <figure class="product-style">
-                        <img src="img/products/'.$a["prod_image"].'" alt="'.$a["prod_name"].'" class="product-thumb" style="width:100%; height:auto;">
-                        <button id='.$a["prod_id"].' type="submit" class="add-to-cart" data-product-tile="add-to-cart">Adicionar ao carrinho</button>
+                        <img src="img/products/'.$a["prod_image"].'" alt="'.$a["prod_name"].'" class="product-thumb rounded" style="width:280px; height:400px;">
+                        <button type="button" class="add-to-cart" 
+                                data-prod-id="'.$a["prod_id"].'"
+                                data-prod-image="'.$a["prod_image"].'"
+                                data-prod-name="'.$a["prod_name"].'" 
+                                data-prod-price="'.$a["prod_price"].'">
+                                Adicionar ao carrinho
+                        </button>
                     </figure>
                     <figcaption>
                         <h3>'.$a["prod_name"].'</h3>

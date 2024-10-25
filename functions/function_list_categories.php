@@ -10,7 +10,7 @@ function function_list_categories(){
 		echo '<td>
 		<form method="post">
 			<input type="hidden" name="cat_id" value="'.$a["cat_id"].'">
-			<button type="submit" name="delete_category"><i class="bi bi-trash3" style="color:red;"></i></button>
+			<button type="submit" name="delete_category" style="border:none;"><i class="bi bi-trash3" style="color:red;"></i></button>
 			<a href="?nav=admin&opt=categories&edit='.$a["cat_id"].'"><i class="bi bi-pencil-square"></i></a>
 		</form>
 		</td></tr>';

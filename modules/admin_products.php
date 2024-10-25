@@ -100,8 +100,13 @@
 			if(isset($_POST['bt_novo_produto'])){
 				function_new_product($_POST['prod_name'], $_POST['prod_author'], $_POST['prod_price'], $_POST['prod_description'], $_POST['prod_category'], $_POST['prod_image']);
 			}
-			
-
+			if(isset($_POST['bt_editar_produto'])){
+				function_edit_product($_POST['prod_id'],$_POST['prod_name'], $_POST['prod_author'], $_POST['prod_price'], $_POST['prod_description'], $_POST['prod_category'], $_POST['prod_image']);
+			}
+			if(isset($_POST["delete_produto"])){
+				function_delete_product($_POST["prod_id"]);
+			}
+	
 			?>
 			
 		</div>

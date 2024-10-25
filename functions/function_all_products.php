@@ -23,7 +23,7 @@ function function_all_products($var,$cat_id) {
                 <td style="width:50%; height:auto;">' . $product["prod_name"] . '</td>
                 <td style="width:20%; height:auto;">' . number_format($product["prod_price"], 2, '.', ',') . '€</td>
                 <td style="width:20%; height:auto;">
-                    <button type="submit" name="delete_product" style="border:none;"><i class="bi bi-trash3" style="color:red;"></i></button>
+                    <button type="submit" name="delete_produto" style="border:none;"><i class="bi bi-trash3" style="color:red;"></i></button>
                     <a href="?nav=admin&opt=products&edit=' . $product["prod_id"] . '"><i class="bi bi-pencil-square"></i></a>
                 </td>
             </tr>';

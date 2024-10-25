@@ -22,7 +22,6 @@
 					echo '<ul>';
 						echo '<li><a href="index.php">Home</a></li>';
 						echo '<li><a href="?nav=admin&opt=users">Utilizadores</a></li>';
-						echo '<li><a href="?nav=admin&opt=user_reg">Registo do utilizador</a></li>';
 						echo '<li><a href="?nav=admin&opt=categories">Categorias</a></li>';
 						echo '<li><a href="?nav=admin&opt=products">Produtos</a></li>';
 						echo '<li><a href="?nav=admin&opt=info">Informações gerais</a></li>';

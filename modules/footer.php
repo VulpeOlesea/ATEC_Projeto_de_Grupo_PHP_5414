@@ -1,4 +1,4 @@
-<footer class="d-flex flex-row justify-content-between">
+<footer class="d-flex flex-row justify-content-between py-3">
 	
 	<div class="flex-column col-lg-4">
 		Online<i class="bi bi-feather"></i>EDITORA
@@ -57,7 +57,7 @@
 			var log_id = $(this).attr('id');
 			$.ajax({
 				type: "POST",
-				url: "functions/function_status_account.php",
+				url: "functions/function_role_account.php",
 				dataType: "text",
 				data:{"log_id": log_id},
 				success: function(response){
@@ -68,7 +68,6 @@
 		});
 		$(".editar").click(function(){
 			var log_id = $(this).attr('id');
-			//alert(log_id);
 			$.ajax({
 				type: "POST",
 				url: "functions/function_status_account.php",
@@ -96,8 +95,34 @@
 			});
 		});
 
+        $(".add-to-cart").click(function(){
+            var prod_id = $(this).data('prod-id');
+			var prod_image = $(this).data('prod-image');
+            var prod_name = $(this).data('prod-name');
+            var prod_price = $(this).data('prod-price');
 
-	});
+            $.ajax({
+                type: "POST",
+                url: "functions/function_add_to_cart.php", 
+                data: {
+                    prod_id: prod_id,
+					prod_image: prod_image,
+                    prod_name: prod_name,
+                    prod_price: prod_price
+                },
+                success: function(response){
+                    alert("Produto adicionado ao carrinho!"); 
+                }
+            });
+        });
+
+		$("#search").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#table_search tr").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		});
+    });
 
 </script>
 

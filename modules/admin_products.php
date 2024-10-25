@@ -15,6 +15,9 @@
 				<th>Alterações</th>
 			</thead>
 			<tbody id="adm_lista_produtos">
+			<?php
+                function_all_products(0,0);
+            ?>
 			</tbody>
 		</table>
 	</div>
@@ -97,6 +100,7 @@
 			if(isset($_POST['bt_novo_produto'])){
 				function_new_product($_POST['prod_name'], $_POST['prod_author'], $_POST['prod_price'], $_POST['prod_description'], $_POST['prod_category'], $_POST['prod_image']);
 			}
+			
 
 			?>
 			

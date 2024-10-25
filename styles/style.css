@@ -51,30 +51,6 @@ body{ background-color: #F3F2EC; }
 /* Homepage
 ================================================== */
 /* Banner */
-
-
-/* Produtos */
-
-
-
-/* Footer
-================================================== */
-
-
-
-.h2{
-  font-family: "Playfair Display" !important;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: #C5A992;
-}
-
-
-
-
-
-
-
 .text-container {
     text-align: center; 
     margin-bottom: 20px;
@@ -85,10 +61,7 @@ body{ background-color: #F3F2EC; }
     margin: 0 auto;
 }
 
-
-
-
-/* Shop page */
+/* Produtos */
 .products-grid {
     display: flex;
     justify-content: space-between;
@@ -99,7 +72,6 @@ body{ background-color: #F3F2EC; }
     position: relative;
     overflow: hidden;
   }
-  
   .slick-slider .product-style {
     margin: 0 15px 25px;
   }

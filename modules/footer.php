@@ -35,7 +35,6 @@
 				dataType: "text",
 				data:{"log_id": log_id},
 				success: function(response){
-					//alert(response);
 					location.reload();
 				}
 			});
@@ -48,7 +47,6 @@
 				dataType: "text",
 				data:{"log_id": log_id},
 				success: function(response){
-					//alert(response);
 					location.reload();
 				}
 			});
@@ -61,7 +59,6 @@
 				dataType: "text",
 				data:{"log_id": log_id},
 				success: function(response){
-					//alert(response);
 					location.reload();
 				}
 			});
@@ -74,8 +71,6 @@
 				dataType: "text",
 				data:{"log_id": log_id},
 				success: function(response){
-					//alert(response);
-					//location.reload();
 					$("#formulario_edicao").html(response);
 				}
 			});
@@ -83,7 +78,6 @@
 
 		$("#filtro_categorias").change(function(){
 			var cat_id = $("#filtro_categorias option:selected").attr('value');
-			//alert(cat_id);
 			$.ajax({
 				type: "POST",
 				url: "functions/function_filter_categories.php",

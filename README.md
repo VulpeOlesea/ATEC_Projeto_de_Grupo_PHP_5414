@@ -1,24 +1,69 @@
-# 5414_Projeto
+# 🧱 Projeto de Grupo – UFCD 5414: Sistema de Gestão de Conteúdos (PHP/MySQL)  
+_ATEC – Curso de Tecnologias e Programação de Sistemas de Informação (Nível 5)_
 
-Briefing Projeto:
+## 📘 Sobre o Projeto
 
-Pretende-se a construção de um sistema de gestão de conteúdos vulgo backend baseado em php/mysql que permita:
-- autenticação de utilizadores
-- gestão de perfil de utilizador individual excepto email em cada conta criada
-- gestão de perfis de utilizadores por parte do administrador
-- registo de utilizadores manual pelo administrador
-- registo de utilizadores pelo próprio garantindo a não duplicação de registos
+Este repositório contém o desenvolvimento de um sistema de **gestão de conteúdos (backend)**, realizado no âmbito da **UFCD 5414**, com recurso a tecnologias **PHP** e **MySQL**.
 
-• Utilizadores no registo devem selecionar (Distrito, Concelho)
-- Gestão de categorias com criação edição e eliminação das mesmas
+O objetivo é construir um sistema funcional que permita a gestão de **utilizadores**, **categorias**, **produtos** e **encomendas**, com funcionalidades específicas de registo, autenticação, controlo de acessos e apresentação de dados no frontend.
 
-• Mostrar quantidade de itens por categoria
-- Gestão de produtos com criação edição e eliminação das mesmas
+## 🎯 Objetivos de Aprendizagem
 
-• Produtos devem ter preços, imagem(s), titulo, descrição e categoria 
-• Na edição de produto, garantir que a imagem não é perdida em caso de update e que é substituida a quando de update com nova imagem
-- Administrador tem que visualizar totais de utilizadores por distrito e também por concelho, saber data de ultimo acesso de cada conta
+- Desenvolver um backend funcional em **PHP/MySQL**
+- Implementar um sistema de autenticação e gestão de contas
+- Praticar manipulação de dados, relacionamentos e controlo de permissões
+- Desenvolver interfaces de administração para categorias, produtos e utilizadores
+- Criar um frontend de apresentação com lógica de encomenda
+- Trabalhar com **CRUD completo**, validações e uploads de ficheiros
 
-• Extra:
-- Ecras de frontend com montra de "loja" apresentando os produtos visitaveis por categoria.
-- Permitir "encomenda" de cada item e neste caso mostrar em BO as respetivas encomendas com data, utilizador e produto(s)
+## 🧠 Funcionalidades Implementadas
+
+### 🔐 Autenticação e Gestão de Utilizadores
+
+- Registo de utilizadores (manual e por auto-registo)
+- Prevenção de registos duplicados
+- Escolha obrigatória de **Distrito** e **Concelho**
+- Login e controlo de sessões
+- Edição de perfil (exceto email)
+- Visualização da data do último acesso
+- Contagem de utilizadores por **Distrito** e **Concelho** (admin)
+
+### 🗂️ Gestão de Categorias
+
+- Criação, edição e eliminação de categorias
+- Exibição da quantidade de produtos por categoria
+
+### 📦 Gestão de Produtos
+
+- Criação, edição e eliminação de produtos
+- Cada produto possui:
+  - Título
+  - Descrição
+  - Preço
+  - Categoria
+  - Imagem(s)
+- Garantia de manutenção de imagem em caso de edição sem nova imagem
+- Substituição correta de imagem se uma nova for carregada
+
+### 🛍️ Encomendas (Extra - Frontend)
+
+- Apresentação de produtos por categoria numa "montra"
+- Registo de encomendas por utilizador
+- Backend mostra detalhes da encomenda: data, utilizador, e produtos incluídos
+
+## 🛠️ Tecnologias Utilizadas
+
+- PHP
+- MySQL
+- HTML
+- CSS
+- Bootstrap
+- Ferramenta de desenvolvimento: XAMPP
+
+## 👥 Trabalho de Grupo
+Este projeto foi desenvolvido de forma colaborativa por alunos do curso:
+
+- Leila Arruda
+- Lucas Patrício
+- Olesea Vulpe
+- Rúben Fonseca
